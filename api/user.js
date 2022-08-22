@@ -36,5 +36,6 @@ export function loginVic(params, config = {}) {
 }
 
 export function getCouponData(params, config = {}) {
-	return http.post('/wechat/api/send', params, config)
+	// return http.post('/wechat/api/send', params, config)
+	return http.post('/user/sendcoupon', params, config)
 }
